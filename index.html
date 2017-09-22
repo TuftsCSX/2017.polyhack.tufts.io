@@ -1,15 +1,13 @@
 <html>
-    <link href=“https://fonts.googleapis.com/css?family=Lato” rel=“stylesheet”>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <style type="text/css">
     html, body {
         /* Remove standard white border around body */
         margin: 0;
-        width: 100vw;
         font-family: 'Lato', sans-serif;
     }
 
     .content {
-        width: 100vw;
             position: relative;
     }
 
@@ -18,13 +16,14 @@
         display: block;
         /* Center it horizontally */
         margin: auto;
-        padding: 10%;
+        padding: 10% 20% 15% 20%;
     }
     .headerlogo {
-        width: 75%;
+        width: 45%;
     }
     .logoholder {
         background-color: #1E1E1E;
+        height: 92vh;
     }
 
     /* NAVBAR */
@@ -34,19 +33,33 @@
         /* padding: 10px 0px; */
         color: white;
         background-color: #404040;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
     }
+
     .navbar .navcontainer {
         width: 100%;
         flex: 1 100%;
         display: flex;
-        /* flex-direction: row; */
-            flex-flow: row wrap;
+        flex-flow: row wrap;
         justify-content: space-around;
     }
-    .navbar ul li {
-        /* Make list elements horizontal */
-        /* display: inline-block; */
-        /* zoom: 1; */
+
+    .navcontainer {
+        height: 9vw;
+            line-height: 9vw;
+    }
+
+    .navbar {
+        font-weight: 300;
+
+        /* Sticky to bottom. */
+        position: fixed;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        min-height: 9vw;
+        background-color: #404040;
     }
 
     /* GRADIENT */
@@ -57,14 +70,62 @@
         /* background: linear-gradient(0deg, #FC6C40 , #A26BAD 33%, #2C9883
            66%); */
         background: linear-gradient(0deg,
-            rgba(252,108,64,0.8),
-            rgba(162,107,173,0.8) 33%,
-            rgba(44,152,131,0.8) 66%);
+            rgba(252,108,64,1),
+            rgba(162,107,173,1) 33%,
+            rgba(44,152,131,1) 66%);
         color: white;
     }
     .gradientpart div {
-        margin: 0 20%;
+        margin: 0 18%;
         text-align: justify;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 36px;
+        text-align: left;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: auto;
+        padding-top: 2%;
+        text-align: left;
+    }
+
+    .greenpart {
+        padding: 8% 0 8% 0;
+    }
+    .purplepart {
+        padding: 10% 0 10% 0;
+    }
+    .orangepart {
+        padding: 10% 0 15% 0;
+    }
+
+    button {
+        display:inline-block;
+        margin:0 auto;
+    }
+
+    .white_button {
+        font-family: 'Lato', sans-serif;
+        font-size: 21px;
+        color: rgba(162,107,173,1);
+        padding: 1.5% 3%;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+
+    .white_button:hover {
+        background-color: rgba(162,107,173,1);
+        color: white;
+        box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.2);
     }
     </style>
     <div class="content">
@@ -86,24 +147,37 @@
         <div class="gradientpart">
             <div class="greenpart">
                 <h1>What is Polyhack?</h1>
-                <p>Polyhack empowers students to solve problems at any scale using
-                the knowledge and skills they’ve acquired through the university
-                and beyond. All members of the Tufts community are invited to
-                participate, whether individually or in groups. We want to bring
-                together students from many disciplines under the umbrella of tech
-                in a collaborative environment. This is not necessarily meant to be
-                a place to network or start a company; our goal for Polyhack is to
-                provide an opportunity to apply classroom knowledge to creative
-                projects. Every participant is expected to be the best they can be,
-                and to help others be their best.</p>
+                <p>Polyhack empowers students to solve problems at any scale
+                using the knowledge and skills they’ve acquired through the
+                university and beyond. All members of the Tufts community are
+                invited to participate, whether individually or in groups. We
+                want to bring together students from many disciplines under the
+                umbrella of tech in a collaborative environment. This is not
+                necessarily meant to be a place to network or start a company;
+                our goal for Polyhack is to provide an opportunity to apply
+                classroom knowledge to creative projects. Every participant is
+                expected to be the best they can be, and to help others be
+                their best.</p>
+                <button class="white_button">Register</button>
             </div>
             <div class="purplepart">
                 <h1>Developers</h1>
-                <p>Polyhack ...</p>
+                <p>Polyhack is one of the few hackathons that allows people to
+                work on whatever project they want to work on. As developers,
+                you can come with a team, with an idea, or just ready to join
+                another team. If you're already very experienced with
+                hackathons and/or coding, we'd love for you to apply to become
+                a mentor!</p>
             </div>
             <div class="orangepart">
                 <h1>Designers</h1>
-                <p>Polyhack ...</p>
+                <p>Polyhack is the only hackathon that runs a series of
+                sponsored design competitions, also known as the Design Wars,
+                as part of the event. You can work with a hackathon team and/or
+                work on the design prompts all night long. After reviewing all
+                the design submissions at the end of the day, the top 3 winners
+                will get portfolio reviews with experienced designers from our
+                sponsors.</p>
             </div>
         </div>
     </div>
