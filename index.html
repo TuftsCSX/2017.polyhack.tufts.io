@@ -1,39 +1,110 @@
-<h1>Currently under development</h1>
+<html>
+    <link href=“https://fonts.googleapis.com/css?family=Lato” rel=“stylesheet”>
+    <style type="text/css">
+    html, body {
+        /* Remove standard white border around body */
+        margin: 0;
+        width: 100vw;
+        font-family: 'Lato', sans-serif;
+    }
 
-<p>Polyhack's 2017 website is currently under development. Please check back
-soon!</p>
+    .content {
+        width: 100vw;
+            position: relative;
+    }
 
-<h2>Frequently asked questions</h2>
+    /* HEADER LOGO */
+    img.headerlogo {
+        display: block;
+        /* Center it horizontally */
+        margin: auto;
+        padding: 10%;
+    }
+    .headerlogo {
+        width: 75%;
+    }
+    .logoholder {
+        background-color: #1E1E1E;
+    }
 
-<h3>When is it?</h3>
-<p>October 13th and 14th, 2017</p>
+    /* NAVBAR */
+    .navbar {
+        width: 100%;
+        /* Sides, top */
+        /* padding: 10px 0px; */
+        color: white;
+        background-color: #404040;
+    }
+    .navbar .navcontainer {
+        width: 100%;
+        flex: 1 100%;
+        display: flex;
+        /* flex-direction: row; */
+            flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .navbar ul li {
+        /* Make list elements horizontal */
+        /* display: inline-block; */
+        /* zoom: 1; */
+    }
 
-<h3>Where is it?</h3>
-<p>574 Boston Ave, same as usual</p>
+    /* GRADIENT */
+    .gradientpart {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        /* background: linear-gradient(0deg, #FC6C40 , #A26BAD 33%, #2C9883
+           66%); */
+        background: linear-gradient(0deg,
+            rgba(252,108,64,0.8),
+            rgba(162,107,173,0.8) 33%,
+            rgba(44,152,131,0.8) 66%);
+        color: white;
+    }
+    .gradientpart div {
+        margin: 0 20%;
+        text-align: justify;
+    }
+    </style>
+    <div class="content">
+        <div class="logoholder">
+            <img class="headerlogo" src="headerlogo.png" />
+        </div>
 
-<h3>How can I apply?</h3>
-<p>We'll release an application at the start of the school year and email the
-CSX elist. Sit tight for now!</p>
+        <div class="navbar">
+            <div class="navcontainer">
+                <div>Home</div>
+                <div>Register</div>
+                <div>Developers</div>
+                <div>Designers</div>
+                <div>Logistics</div>
+                <div>FAQ</div>
+            </div>
+        </div>
 
-<h3>How can I get on the CSX elist?</h3>
-<p>You can sign up at <a href="http://eepurl.com/-5_eX">this link</a>. We send
-probably too few emails, so don't worry about spam.</p>
-
-<h3>How can I sponsor your wonderful event?</h3>
-<p>You should reach out to <i>sponsor [at] tufts [dot] io</i> and Emily and Max
-will help you!</p>
-
-<h3>But my company says it's reached its hackathon quota for the year...</h3>
-<p>You should <b>still</b> reach out to <i>sponsor [at] tufts [dot] io</i>
-because there are some awesome other events planned!</p>
-
-<h2>Websites from previous years</h2>
-
-<p>
-    <ul>
-        <li><a href="http://2015.polyhack.tufts.io/">2015</a></li>
-        <li><a href="http://2016.polyhack.tufts.io/">2016</a></li>
-    </ul>
-</p>
-
-<p>With love,<br />the Polyhack team.</p>
+        <div class="gradientpart">
+            <div class="greenpart">
+                <h1>What is Polyhack?</h1>
+                <p>Polyhack empowers students to solve problems at any scale using
+                the knowledge and skills they’ve acquired through the university
+                and beyond. All members of the Tufts community are invited to
+                participate, whether individually or in groups. We want to bring
+                together students from many disciplines under the umbrella of tech
+                in a collaborative environment. This is not necessarily meant to be
+                a place to network or start a company; our goal for Polyhack is to
+                provide an opportunity to apply classroom knowledge to creative
+                projects. Every participant is expected to be the best they can be,
+                and to help others be their best.</p>
+            </div>
+            <div class="purplepart">
+                <h1>Developers</h1>
+                <p>Polyhack ...</p>
+            </div>
+            <div class="orangepart">
+                <h1>Designers</h1>
+                <p>Polyhack ...</p>
+            </div>
+        </div>
+    </div>
+</html>
